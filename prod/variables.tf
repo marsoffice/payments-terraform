@@ -8,6 +8,11 @@ variable "app_name" {
   default = "payments"
 }
 
+variable "short_app_name" {
+  type    = string
+  default = "pay"
+}
+
 variable "location" {
   type    = string
   default = "West Europe"

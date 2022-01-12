@@ -19,7 +19,7 @@ module "sa" {
   source           = "../sa"
   location         = var.location
   resource_group   = var.resource_group
-  name             = "sa${var.app_name}${replace(lower(var.location), " ", "")}${var.env}"
+  name             = "sa${var.short_app_name}${replace(lower(var.location), " ", "")}${var.env}"
   tier             = "Standard"
   replication_type = "LRS"
   access_tier      = "Hot"
@@ -29,7 +29,7 @@ module "kvl" {
   source         = "../kvl"
   location       = var.location
   resource_group = var.resource_group
-  name           = "kvl-${var.app_name}-${replace(lower(var.location), " ", "")}-${var.env}"
+  name           = "kvl-${var.short_app_name}-${replace(lower(var.location), " ", "")}-${var.env}"
   secrets = merge(var.secrets, tomap({
     localsaconnectionstring      = module.sa.connection_string
   }))

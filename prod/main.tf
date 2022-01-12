@@ -62,4 +62,5 @@ module "zone_westeurope" {
   appi_sku                        = "PerGB2018"
   graph_api_object_id             = module.graph_api_sp.object_id
   graph_api_app_roles_ids         = module.graph_api_sp.app_roles_ids
+  short_app_name = var.short_app_name
 }

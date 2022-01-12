@@ -49,3 +49,17 @@ module "graph_api_sp" {
   allowed_role_names = ["User.Read.All", "Group.Read.All", "Application.Read.All", "AppRoleAssignment.ReadWrite.All"]
 }
 
+module "zone_westeurope" {
+  source                          = "../modules/zone"
+  location                        = "West Europe"
+  resource_group                  = module.rg.name
+  app_name                        = var.app_name
+  env                             = var.env
+  secrets                         = local.secrets
+  configs                         = local.configs
+  is_main                         = true
+  appi_retention                  = 30
+  appi_sku                        = "PerGB2018"
+  graph_api_object_id             = module.graph_api_sp.object_id
+  graph_api_app_roles_ids         = module.graph_api_sp.app_roles_ids
+}

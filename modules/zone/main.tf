@@ -56,11 +56,11 @@ locals {
 }
 
 
-module "func_ad_zoho_invoices_integrator" {
+module "func_ad_zoho_invoice_integrator" {
   source                     = "../func"
   location                   = var.location
   resource_group             = var.resource_group
-  name                       = "func-${var.app_name}-agent-${replace(lower(var.location), " ", "")}-${var.env}"
+  name                       = "func-${var.app_name}-ad-zoho-invoice-integrator-${replace(lower(var.location), " ", "")}-${var.env}"
   storage_account_name       = module.sa.name
   storage_account_access_key = module.sa.access_key
   app_service_plan_id        = module.appsp.id

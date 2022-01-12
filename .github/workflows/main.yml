@@ -16,6 +16,8 @@ env:
   zohoclientsecret: ${{ secrets.zohoclientsecret }}
   zohoemail: ${{ secrets.zohoemail }}
   zohopassword: ${{ secrets.zohopassword }}
+  opaurl: ${{ secrets.opaurl }}
+  opatoken: ${{ secrets.opatoken }}
 
 defaults:
   run:

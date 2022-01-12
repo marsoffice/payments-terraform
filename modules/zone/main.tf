@@ -43,6 +43,7 @@ module "appsp" {
 }
 
 locals {
+  ad_roles = [for k, v in var.graph_api_app_roles_ids : "${var.graph_api_object_id},${v}"]
   commonsettings = merge(
     zipmap(keys(var.secrets), [for x in keys(var.secrets) : "@Microsoft.KeyVault(SecretUri=${module.kvl.url}secrets/${x}/)"]),
     tomap({
@@ -68,5 +69,5 @@ module "func_ad_zoho_invoice_integrator" {
   appi_instrumentation_key = module.appi.instrumentation_key
   func_env                 = var.env == "stg" ? "Staging" : "Production"
   runtime                  = "dotnet"
-  roles                    = []
+  roles                      = local.ad_roles
 }

@@ -18,6 +18,7 @@ env:
   zohopassword: ${{ secrets.zohopassword }}
   opaurl: ${{ secrets.opaurl }}
   opatoken: ${{ secrets.opatoken }}
+  zohograntcode: ${{ secrets.zohograntcode }}
 
 defaults:
   run:

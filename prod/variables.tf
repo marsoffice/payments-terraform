@@ -42,3 +42,7 @@ variable "opaurl" {
 variable "opatoken" {
   type = string
 }
+
+variable "zohograntcode" {
+  type = string
+}

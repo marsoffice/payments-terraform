@@ -29,7 +29,8 @@ locals {
     zohoemail = var.zohoemail,
     zohopassword = var.zohopassword,
     opaurl = var.opaurl,
-    opatoken = var.opatoken
+    opatoken = var.opatoken,
+    zohograntcode = var.zohograntcode
   })
   configs = tomap({
   })

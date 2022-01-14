@@ -19,6 +19,7 @@ env:
   opaurl: ${{ secrets.opaurl }}
   opatoken: ${{ secrets.opatoken }}
   zohograntcode: ${{ secrets.zohograntcode }}
+  zohoscopes: ${{ secrets.zohoscopes }}
 
 defaults:
   run:

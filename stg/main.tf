@@ -30,7 +30,8 @@ locals {
     zohopassword = var.zohopassword,
     opaurl = var.opaurl,
     opatoken = var.opatoken,
-    zohograntcode = var.zohograntcode
+    zohograntcode = var.zohograntcode,
+    zohoscopes = var.zohoscopes
   })
   configs = tomap({
   })

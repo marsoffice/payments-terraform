@@ -44,3 +44,7 @@ variable "opatoken" {
 variable "zohograntcode" {
   type = string
 }
+
+variable "zohoscopes" {
+  type = string
+}

@@ -43,7 +43,7 @@ variable "opatoken" {
   type = string
 }
 
-variable "zohograntcode" {
+variable "zohort" {
   type = string
 }
 variable "zohoscopes" {

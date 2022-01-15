@@ -49,3 +49,6 @@ variable "zohort" {
 variable "zohoscopes" {
   type = string
 }
+variable "zohoorgid" {
+  type = string
+}

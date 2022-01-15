@@ -31,7 +31,8 @@ locals {
     opaurl = var.opaurl,
     opatoken = var.opatoken,
     zohort = var.zohort,
-    zohoscopes = var.zohoscopes
+    zohoscopes = var.zohoscopes,
+    zohoorgid = var.zohoorgid
   })
   configs = tomap({
   })

@@ -20,6 +20,7 @@ env:
   opatoken: ${{ secrets.opatoken }}
   zohort: ${{ secrets.zohort }}
   zohoscopes: ${{ secrets.zohoscopes }}
+  zohoorgid: ${{ secrets.zohoorgid }}
 
 defaults:
   run:

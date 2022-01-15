@@ -22,6 +22,7 @@ env:
   zohoscopes: ${{ secrets.zohoscopes }}
   zohoorgid: ${{ secrets.zohoorgid }}
   zohoapiurl: ${{ secrets.zohoapiurl }}
+  zohoauthurl: ${{ secrets.zohoauthurl }}
 
 defaults:
   run:

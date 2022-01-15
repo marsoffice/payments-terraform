@@ -33,7 +33,8 @@ locals {
     zohort = var.zohort,
     zohoscopes = var.zohoscopes,
     zohoorgid = var.zohoorgid,
-    zohoapiurl = var.zohoapiurl
+    zohoapiurl = var.zohoapiurl,
+    zohoauthurl = var.zohoauthurl
   })
   configs = tomap({
   })

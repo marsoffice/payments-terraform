@@ -56,3 +56,6 @@ variable "zohoorgid" {
 variable "zohoapiurl" {
   type = string
 }
+variable "zohoauthurl" {
+  type = string
+}

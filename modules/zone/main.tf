@@ -70,4 +70,5 @@ module "func_ad_zoho_invoice_integrator" {
   func_env                 = var.env == "stg" ? "Staging" : "Production"
   runtime                  = "dotnet"
   roles                      = local.ad_roles
+  enabled = var.env == "prod"
 }

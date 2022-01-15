@@ -46,3 +46,7 @@ variable "runtime" {
 variable "roles" {
   type = list(string)
 }
+
+variable "enabled" {
+  type = bool
+}

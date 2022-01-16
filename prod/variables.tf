@@ -35,14 +35,6 @@ variable "zohopassword" {
 }
 
 
-variable "opaurl" {
-  type = string
-}
-
-variable "opatoken" {
-  type = string
-}
-
 variable "zohort" {
   type = string
 }

@@ -28,8 +28,6 @@ locals {
     zohoclientsecret = var.zohoclientsecret,
     zohoemail = var.zohoemail,
     zohopassword = var.zohopassword,
-    opaurl = var.opaurl,
-    opatoken = var.opatoken,
     zohort = var.zohort,
     zohoscopes = var.zohoscopes,
     zohoorgid = var.zohoorgid,

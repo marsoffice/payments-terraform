@@ -68,7 +68,7 @@ module "func_ad_zoho_invoice_integrator" {
   app_configs = merge(
     local.commonsettings,
     tomap({
-      cron = "0 0 * * * *"
+      cron = "0 0 0 * * *"
     })
   )
   appi_instrumentation_key = module.appi.instrumentation_key
